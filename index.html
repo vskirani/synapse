@@ -25,7 +25,7 @@
     </style>
 </head>
 <body>
-    <div class="w-full  mx-auto">
+    <div class="w-full mx-auto">
         <!-- Mobile Navbar -->
         <nav class="bg-purpple lg:hidden">
             <div class="flex flex-row justify-between items-center py-4 px-4">
@@ -75,26 +75,28 @@
         </nav>
 
         <!-- Welcome Section -->
-        <div class="flex flex-col lg:flex-row bg-gradient-to-br from-purpple to-purpple/80 py-12 lg:py-20 px-6 lg:px-16 items-center">
-            <div class="w-full lg:w-1/2 lg:pr-8">
-                <h1 class="text-3xl lg:text-4xl font-poppins font-bold text-white">Selamat Datang di Synapse</h1>
-                <p class="text-base lg:text-lg font-poppins text-white/90 mt-4 leading-relaxed">Platform pembelajaran berbasis web untuk pendidikan neuroanestesi dengan pendekatan flipped classroom. Pelajari materi teori secara mandiri, persiapkan diri untuk praktikum, dan evaluasi pemahaman Anda.</p>
-                <search class="mt-6 block">
-                    <input type="text" placeholder="Cari Materi" class="w-full py-2 px-4 rounded-lg text-black font-poppins bg-white/10 focus:bg-white/20 transition-colors">
-                </search>
+        <div class="relative overflow-hidden bg-gradient-to-br from-purpple to-purpple/80 py-16 lg:py-24 px-6 lg:px-16">
+            <div class="absolute -right-16 top-1/2 -translate-y-1/3 w-1/2 h-full pointer-events-none hidden lg:block">
+                <img src="image/hero.png" alt="" class="w-100 h-auto object-contain opacity-15 blur-[1px]">
             </div>
             
-            <div class="w-full lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
-                <div class="w-full max-w-md h-64 lg:h-80 bg-white/10 rounded-2xl flex items-center justify-center border-2 border-dashed border-white/30">
-                    <p class="text-white/50 font-poppins text-center px-4">Gambar akan ditambahkan di sini</p>
+            <!-- Content -->
+            <div class="relative z-10 max-w-2xl">
+                <h1 class="text-3xl lg:text-5xl font-poppins font-bold text-white leading-tight">Selamat Datang di Synapse</h1>
+                <p class="text-base lg:text-lg font-poppins text-white/90 mt-6 leading-relaxed">Platform pembelajaran berbasis web untuk pendidikan neuroanestesi dengan pendekatan flipped classroom. Pelajari materi teori secara mandiri, persiapkan diri untuk praktikum, dan evaluasi pemahaman Anda.</p>
+                <div class="mt-8 flex items-center bg-white rounded-full p-1.5 shadow-lg max-w-lg">
+                    <input type="text" placeholder="Cari materi pembelajaran..." class="flex-1 py-2.5 px-5 text-gray-600 font-poppins bg-transparent focus:outline-none">
+                    <button class="bg-green text-white font-poppins font-semibold py-3 px-8 rounded-full hover:bg-green/90 transition-colors">
+                        Cari
+                    </button>
                 </div>
             </div>
         </div>
 
         <!-- Fitur Utama Section -->
-         <div class="flex flex-col items-center justify-center mt-24 ">
-            <h2 class="font-poppins font-bold text-2xl justify-center items-center text-black flex">Fitur Utama</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2  gap-6 p-6 lg:p-12">
+        <div class="flex flex-col items-center py-16 lg:py-24 px-6 lg:px-12">
+            <h2 class="font-poppins font-bold text-2xl text-gray-900 mb-8">Fitur Utama</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
                 <!-- Card Pembelajaran -->
                 <div class="flex flex-col bg-white rounded-2xl p-6 shadow-lg border-2 border-transparent hover:border-purpple hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease-in-out cursor-pointer">
                     <!-- Icon -->
@@ -130,67 +132,60 @@
                     </a>
                 </div>
             </div>
-
-         </div>
+        </div>
 
         <!-- Sumber Belajar External -->
-        <div class="flex flex-col items-center justify-center py-12 px-6 lg:px-12">
+        <div class="flex flex-col items-center py-16 lg:py-24 px-6 lg:px-12 bg-gray-50">
             <h2 class="text-2xl font-poppins font-bold text-gray-900 mb-8">Sumber Belajar Eksternal</h2>
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full">
                 <!-- Card Aneskey -->
-                <a href="https://aneskey.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <a href="https://aneskey.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">Aneskey</span>
+                    <span class="font-poppins font-medium text-gray-800">Aneskey</span>
                 </a>
-
-                <!-- Card Mentimeter-->
-                <a href="https://www.mentimeter.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <!-- Card Mentimeter -->
+                <a href="https://www.mentimeter.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">Mentimeter</span>
+                    <span class="font-poppins font-medium text-gray-800">Mentimeter</span>
                 </a>
-
                 <!-- Card ABG Ninja -->
-                <a href="https://abg.ninja/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <a href="https://abg.ninja/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">ABG Ninja</span>
+                    <span class="font-poppins font-medium text-gray-800">ABG Ninja</span>
                 </a>
-
                 <!-- Card Keperawatan Intensif -->
-                <a href="https://keperawatanintensif.weebly.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <a href="https://keperawatanintensif.weebly.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">Keperawatan Intensif</span>
+                    <span class="font-poppins font-medium text-gray-800">Keperawatan Intensif</span>
                 </a>
-
-                <!-- Card Flashcard Memory-->
-                <a href="https://quizlet.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <!-- Card Flashcard Memory -->
+                <a href="https://quizlet.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">Flashcard Memory</span>
+                    <span class="font-poppins font-medium text-gray-800">Flashcard Memory</span>
                 </a>
-
                 <!-- Card Padlet -->
-                <a href="https://padlet.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300 ease-in-out">
+                <a href="https://padlet.com/" class="group flex items-center gap-3 bg-white rounded-xl py-4 px-5 shadow-sm border border-gray-100 hover:border-green hover:shadow-md hover:-translate-y-1 transition-all duration-300">
                     <svg class="w-5 h-5 text-green flex-shrink-0 group-hover:scale-110 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
                     </svg>
-                    <span class="font-poppins font-medium text-gray-800  transition-colors duration-300">Padlet</span>
+                    <span class="font-poppins font-medium text-gray-800">Padlet</span>
                 </a>
             </div>
         </div>
-        
 
         <!-- Footer -->
-        <footer class="bg-purpple py-4">
-            <p class="text-center text-white font-poppins">© 2024 Synapse - Platform Pembelajaran Neuroanestesi</p>
+        <footer class="bg-purpple py-6">
+            <p class="text-center text-white font-poppins text-sm">© 2026 Synapse - Platform Pembelajaran Neuroanestesi</p>
         </footer>
     </div>
 
