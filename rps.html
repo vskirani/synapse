@@ -52,7 +52,7 @@
                     <a href="index.html" class="text-white font-poppins font-medium py-3 px-4 rounded-lg hover:bg-white/10 hover:bg-white/20 transition-colors">
                         Beranda
                     </a>
-                    <a href="about.html" class="text-white font-poppins font-medium py-3 px-4 rounded-lg bg-white/10 transition-colors">
+                    <a href="about.html" class="text-white font-poppins font-medium py-3 px-4 rounded-lg hover:bg-white/10 transition-colors">
                         Tentang
                     </a>
                 </div>
@@ -70,7 +70,7 @@
             </div>
             <div class="flex flex-row gap-8">
                 <a href="index.html" class="text-white font-poppins font-semibold hover:text-white/80 transition-colors">Beranda</a>
-                <a href="about.html" class="text-white font-poppins font-semibold hover:text-white/80 transition-colors border-b-2 border-white pb-1">Tentang</a>
+                <a href="about.html" class="text-white font-poppins font-semibold hover:text-white/80 transition-colors">Tentang</a>
             </div>
         </nav>
 
@@ -473,7 +473,20 @@
         <footer class="bg-purpple py-4">
             <p class="text-center text-white font-poppins">© 2024 Synapse - Platform Pembelajaran Neuroanestesi</p>
         </footer>
-
     </div>
+
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const menuIcon = document.getElementById('menuIcon');
+        const closeIcon = document.getElementById('closeIcon');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('hidden');
+        });
+    </script>
+    
 </body>
 </html>
